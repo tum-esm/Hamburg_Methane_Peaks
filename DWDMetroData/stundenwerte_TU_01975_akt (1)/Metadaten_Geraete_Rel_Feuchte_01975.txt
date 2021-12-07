@@ -1,0 +1,8 @@
+Stations_ID;Stationsname;Geo. Laenge [Grad];Geo. Breite [Grad];Stationshoehe [m];Geberhoehe ueber Grund [m];Von_Datum;Bis_Datum;Geraetetyp Name;Messverfahren;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;11.7;2;19490101;19680711;Hygrograph nach Frankenberg;Feuchteregistrierung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;13;2;19680712;19950904;Hygrograph nach Frankenberg;Feuchteregistrierung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;2;19950905;19950930;Hygrograph nach Frankenberg;Feuchteregistrierung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;2;19951001;20160309;Feuchtesonde HMP45D;Feuchtemessung, elektr.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;2;19951001;20150121;Thermohygrograph;Temperatur- und Feuchtereg., konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;2;20160310;20210918;EE33;Feuchtemessung, elektr.;eor;
+generiert: 19.09.2021 --  Deutscher Wetterdienst  --

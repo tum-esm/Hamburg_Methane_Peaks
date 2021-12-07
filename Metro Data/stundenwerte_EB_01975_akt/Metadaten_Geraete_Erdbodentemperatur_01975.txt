@@ -1,0 +1,24 @@
+Stations_ID;Stationsname;Geo. Laenge [Grad];Geo. Breite [Grad];Stationshoehe [m];Geberhoehe ueber Grund [m];Von_Datum;Bis_Datum;Geraetetyp Name;Messverfahren;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;11.7;-.02;19610101;19680711;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;13;-.02;19680712;19911031;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;11.7;-.05;19610101;19680711;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;13;-.05;19680712;19950904;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-.05;19950905;19950930;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-.05;19951001;20210826;PT 100 (Erdboden);Temperaturmessung, elektr.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;11.7;-.1;19610101;19680711;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;13;-.1;19680712;19950904;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-.1;19950905;19950930;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-.1;19951001;20210826;PT 100 (Erdboden);Temperaturmessung, elektr.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;11.7;-.2;19610101;19680711;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;13;-.2;19680712;19950904;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-.2;19950905;19950930;Erdbodenwinkelthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-.2;19951001;20210826;PT 100 (Erdboden);Temperaturmessung, elektr.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;11.7;-.5;19610101;19680711;Erdboden-Tiefenthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;13;-.5;19680712;19950904;Erdboden-Tiefenthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-.5;19950905;19950930;Erdboden-Tiefenthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-.5;19951001;20210826;PT 100 (Erdboden);Temperaturmessung, elektr.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;11.7;-1;19610101;19680711;Erdboden-Tiefenthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;10;53.64;13;-1;19680712;19950904;Erdboden-Tiefenthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-1;19950905;19950930;Erdboden-Tiefenthermometer;Temperaturmessung, konv.;eor;
+1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;-1;19951001;20210826;PT 100 (Erdboden);Temperaturmessung, elektr.;eor;
+generiert: 27.08.2021 --  Deutscher Wetterdienst  --

@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname
+  1975;   12.00; 53.6380;  9.9994;19360101;19461031;Hamburg-Fuhlsbüttel
+  1975;   11.70; 53.6380;  9.9994;19461101;19680711;Hamburg-Fuhlsbüttel
+  1975;   13.00; 53.6382;  9.9953;19680712;19950904;Hamburg-Fuhlsbüttel
+  1975;   14.05; 53.6332;  9.9881;19950905;        ;Hamburg-Fuhlsbüttel
