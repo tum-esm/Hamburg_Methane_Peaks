@@ -14,7 +14,7 @@ pacman::p_load(pacman, dplyr, GGally, ggplot2, ggthemes,
 
 
 #Set Working Directory
-setwd("~/Documents/TUM/GIT/Isotrope Plots")
+setwd("~/Documents/Git/HamburgIsotope/Skipts")
 
 
 ####################Isotrope Data###################
@@ -83,7 +83,7 @@ p <- ggplot(TotalData, aes(x = fill.time.utc, y = X.CH4.)) +
 #         geom_smooth(method = "lm", se=FALSE, col='black', size=0.5, fullrange = TRUE) +
 #         labs(x = "Mole Fraction", y = "Isotopic Signatures, ‰", title = " Keeling Plot, 12C") +
 #         theme(axis.text.x=element_text(angle=60, hjust=1))
-#       
+# 
 # k <- ggplot(TotalData, aes(x = c2H, y = d2H.VPDB)) +
 #       expand_limits(x = 0) +
 #       geom_point(aes(x = c2H, y = d2H.VPDB), shape = 3, size = 1, col='blue') +
