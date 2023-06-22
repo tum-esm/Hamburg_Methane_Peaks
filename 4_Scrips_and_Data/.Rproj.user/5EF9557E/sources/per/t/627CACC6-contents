@@ -1,0 +1,108 @@
+# Script to Plot the Data From the "CombineMeteorologicalData.csv" created by the script "Combine_All_Data_To_CSV_File.R"
+# Author Juan Bettinelli
+# Last change: 26.1.23
+
+library(pacman)
+library(lubridate)
+library(readr)
+library(plyr)
+library(tidyverse)
+library(ggplot2)   
+library(hexbin)
+library(gridExtra)
+library(reshape2)
+library(openair)
+library(pracma)
+
+pacman::p_load(pacman, dplyr, GGally, ggplot2, ggthemes, 
+               ggvis, httr, lubridate, plotly, rio, rmarkdown, shiny, 
+               stringr, tidyr) 
+
+#Set Working Directory, Set it into the folder "MasterThesis/4_Scrips_and_Data" to automaticaly access the data.
+setwd("/Users/juanbettinelli/Documents/Uni/MasterThesis/4_Scrips_and_Data")
+
+source("3_Scripts/Functions.R")
+
+StartTime <- as.POSIXct('2021-08-01 22:03:00', 
+                        format = "%Y-%m-%d %H:%M:%S", 
+                        tz ="utc")
+# Start Time: 2021-08-01 22:03:00
+
+FinishTime <- as.POSIXct('2022-03-29 00:00:00', 
+                         format = "%Y-%m-%d %H:%M:%S", 
+                         tz ="utc")
+
+# Total Timeseries: 2022-03-29 00:00:00
+# Hamburg Campagne Timeseries: 2021-09-06 00:00:00
+# Hamburg Campaine #2: 2021-09-17 10:21:00
+
+########### Read the CSV File #############
+
+TotalData <- import("4_Data/OutputData/CombineMeteorologicalData.csv")
+TotalData$UTC <- as.POSIXct(as.character(TotalData$UTC), 
+                                 format = "%Y-%m-%d %H:%M:%S", 
+                                 tz = "UTC")
+
+TotalData$X.CH4. <- as.numeric(TotalData$X.CH4.)
+
+TotalData <- filter(TotalData, TotalData$UTC > StartTime & TotalData$UTC < FinishTime, .preserve = FALSE)
+
+TotalData$UTC <- as.POSIXct(TotalData$UTC, 
+                                               format = "%d-%m-%Y %H:%M:%S", 
+                                               tz = "utc")
+
+TotalData$Direction[TotalData$Direction > 361] <- NA
+TotalData$Speed[TotalData$Speed > 99] <- NA
+
+
+########## ?????????????? #########
+# cor(TotalData$WindSpeed,TotalData$WindDirction)
+
+######## Finding the Peaks, The Average Meteorological Data during Peak, Saving csv File #########
+CH4_Peak_Finder(TotalData, TRUE)
+
+
+######### Wind Rose Plots ##########
+WindRose_Plots(TotalData)
+
+### Comparison Plots #####
+Compare_Timeline(TotalData, 4) # Use 0 for fixed Panels integer for rest
+
+Compare_Timeline_Basic(TotalData)
+
+########### 4 Plot CH4 Concentration Timeseries ##############
+CH4_TimeLine(TotalData, StartTime, FinishTime, 10, FALSE) #CH4_TimeLine(ImputDataFrame = , StartTime = , FinishTime =, MumberOfPanels = (0=FixedPanelForPaper), TURE = OnePlotMultiplePanels FALSE = MultipePlotsOnePanel)
+
+
+######## Plot Wind Direction (DWD)/Speed/CH4#############
+Basic_Wind_DWD_CH4(TotalData, StartTime, FinishTime)
+
+######## Plot Wind Direction (Mast 110m)/Speed/CH4#############
+Basic_Wind_110m_CH4(TotalData, StartTime, FinishTime)
+
+######## Plot Wind Direction (Geomatikum)/CH4#############
+Basic_Wind_Geomatikum_CH4(TotalData, StartTime, FinishTime)
+
+######## Plot Rain/CH4#############
+Basic_Rain_CH4(TotalData, StartTime, FinishTime)
+  
+
+######## Plot Temp/CH4#############
+Basic_Temp_CH4(TotalData, StartTime, FinishTime)
+  
+
+######## Plot Humid/CH4#############
+Basic_Humidity_CH4(TotalData, StartTime, FinishTime)
+  
+
+######## Plot CH4/Waterlevel/ Winddierction#############
+Basic_Wind_D_WL_CH4(TotalData, StartTime, FinishTime)
+  
+
+######## Plot CH4/Water level/ Wind direction, Split into 10 Day intervals#############
+Basic_CH4_WaterLevel_Wind_Direction(TotalData)
+  
+######## Plot CH4/Water level/ Wind Speed, Split into 10 Day intervals#############
+Basic_CH4_WaterLevel_Wind_Speed(TotalData)
+
+
