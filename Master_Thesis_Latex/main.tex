@@ -1,0 +1,65 @@
+\documentclass[color]{tumphthesis}
+
+\usepackage{duckuments}
+\usepackage{epigraph}
+\usepackage{lipsum}
+\usepackage{wasysym}
+\usepackage{cleveref}
+\usepackage{subcaption}
+\usepackage{graphicx} 
+\usepackage{comment}
+\usepackage{booktabs}  % nice looking tables
+\usepackage{siunitx}
+
+
+\thesistitle
+{Analysis of unexpected Methane peaks in the urban environment of Hamburg}
+{Der Titel meiner Magisterarbeit}
+\thesisauthor{Juan Bettinelli}{Author}
+\thesisdate{2023}{5}{14}
+\supervisor{Prof. Dr Dopfer}
+\examiner{Prof. Dr Chen}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\copyrightpage
+
+\abstractpage
+\input{abstract}
+
+\tableofcontents
+
+\mainmatter\setcounter{page}{1}
+\include{chap1}
+\include{chap2}
+\include{chap3}
+\include{chap4}
+%\include{chap5}
+
+\acknowledgments
+\input{acknowledgements}
+
+\appendix
+\include{app2}
+\include{app3}
+
+
+\addcontentsline{toc}{chapter}{\protect Bibliography}
+\bibliography{MasterArbeit_File}
+
+\addcontentsline{toc}{chapter}{\protect List of Figures}
+\listoffigures
+
+\addcontentsline{toc}{chapter}{\protect List of Tables}
+\listoftables
+
+
+
+
+
+
+
+\end{document}
