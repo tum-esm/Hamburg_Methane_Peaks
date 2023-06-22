@@ -1,5 +1,0 @@
-Stations_ID;Stationsname;Geo. Laenge [Grad];Geo. Breite [Grad];Stationshoehe [m];Geberhoehe ueber Grund [m];Von_Datum;Bis_Datum;Geraetetyp Name;Messverfahren;eor;
-1975;Hamburg-Fuhlsbüttel;10;53.64;13;10;19750101;19940731;Universal-Windschreiber 90;Windmessung, elektromechanisch;eor;
-1975;Hamburg-Fuhlsbüttel;10;53.64;13;10;19940801;19950904;Windrichtungssensor Classic 4.3121 (DWDSYN);Windmessung, elektr.;eor;
-1975;Hamburg-Fuhlsbüttel;9.99;53.63;14.05;10;19950905;20210826;Windrichtungssensor Classic 4.3121 (DWDSYN);Windmessung, elektr.;eor;
-generiert: 27.08.2021 --  Deutscher Wetterdienst  --
